@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/93fce092c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="Logo" class="logo">
+               <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+               </ul> 
+               <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span> Likhitha Guntoju</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+<!-- ------------------about ------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/pic.avif" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I'm Likhitha Guntoju, a full-stack developer passionate about creating dynamic and intuitive web applications. With a focus on both front-end and back-end technologies, I specialize in building seamless user experiences while ensuring robust functionality. Let's work together to bring your ideas to life.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tabs-content active-tab" id="skills" >
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, Js</li>
+                            <li><span>Back-End Development(Api's, Frm's)</span><br>JavaSE & EE, JDBC, Hibernate, Spring, SpringBoot</li>
+                            <li><span>Relational database management systems</span><br> My SQL, Oracle SQL</li>
+                            <li><span>Tools</span><br> Postman, Maven, Git, Github</li>
+                        </ul>
+                    </div>
+
+                    <div class="tabs-content" id="education">
+                        <ul>
+                            <li><span>2020 - 2023</span><br> Kommuri Pratap Reddy Institue of Engineering and technology</li>
+                            <li><span>2017 - 2020</span><br>Mina Institue of Engineering and Technology</li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- --------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Applications </h2>
+                    <p> 
+                        "Proficient in developing web applications with HTML, CSS, and JavaScript, with a focus on creating responsive and interactive user interfaces. Expertise in writing clean, efficient code and adhering to best practices to deliver high-quality front-end solutions."
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Back-End Applications </h2>
+                    <p>Experienced in backend development with Java, using JDBC APIs and frameworks like Spring, Spring Boot, and Hibernate. Skilled in building scalable and robust applications with efficient database integration and adherence to best practices in backend architecture.
+                        </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Database Applications</h2>
+                    <p> "Skilled in developing database applications with MySQL and Oracle, including expertise in creating and optimizing stored procedures. Experienced in designing efficient database schemas and ensuring data integrity through best practices."</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---portfolio------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/flight.webp" alt="">
+                    <div class="layer"> 
+                         <h3>Flight Management System (FMS)</h3>
+                         <p>Developed a robust FMS application leveraging Spring Boot framework, enhancing the efficiency of flight scheduling processes. Technologies Used: Spring Boot, RESTful APIs, Postman,  MySQL, Object-Relational Mapping (ORM),Java.</p>
+                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Banking Application.png" alt="">
+                    <div class="layer"> 
+                        <h3>Banking Application</h3>
+                        <p>"Developed a comprehensive banking system in Java, boosting transaction processing efficiency by 30%. The project featured a robust verification system with OTP generation for enhanced security."</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                   </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Screenshot_Resized_1200x660.png" alt="">
+                    <div class="layer"> 
+                        <h3>EVEenture Landing page</h3>
+                        <p>"Created an interactive web-based memory card game using HTML, CSS, and JavaScript to boost user engagement and cognitive skills. The game provides a classic memory-matching challenge, delivering an enjoyable experience for players of all ages."</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                   </div>
+                </div>
+            </div>
+           
+            <div class="work-list" id="list2" >
+                <div class="work">
+                    <img src="./images/memory game.png" alt="">
+                    <div class="layer"> 
+                        <h3>Memory Card Web Game</h3>
+                        <p>"Created an interactive web-based memory card game using HTML, CSS, and JavaScript to boost user engagement and cognitive skills. The game provides a classic memory-matching challenge, delivering an enjoyable experience for players of all ages."</p>
+                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="./images/background.jpg" alt="">
+                    <div class="layer"> 
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                   </div>
+                </div>
+                <div class="work">
+                    <img src="./images/background.jpg" alt="">
+                    <div class="layer"> 
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                   </div>
+
+                </div>
+                
+            </div>
+
+
+
+            <a class="btn" id="seemorebtn" onclick="seemore()">See More</a>
+        </div>
+    </div>
+
+    <!-- ----------contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>likhitha3693@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9000000000</p>
+                    <div class="social-ions">
+                        <a href="http://www.linkedin.com/in/likhithaguntoju"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/LikhithaGuntoju"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./images/LIKHITHA.pdf" download class="btn btn2">download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Likhitha Guntoju. </p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwYBF-jT9c0txGd5U8kgT73d4SLcDPX0HWP4H_x-yoG31ycbwU-oV4R3bah7D6iLS7E/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+
+        const msg = document.getElementById("msg")
+
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                // to refresh success msg
+                form.reset()
+                // it resets form(input fields) after messge sent
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+
+
+</html>
